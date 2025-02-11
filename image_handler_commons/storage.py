@@ -24,6 +24,9 @@ class BaseStorageBackend(ABC):
     def generate_object_key(self, filename: str) -> str:
         return secrets.token_hex(16) + '-' + filename
 
+    def get_filename_from_object_key(self, key: str) -> str:
+        return key.split('-', 1)[1]
+
     @abstractmethod
     async def perform_put_object(self, obj: BytesIO, key: str) -> None:
         pass
