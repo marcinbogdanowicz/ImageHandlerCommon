@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "image-handler-commons"
+version = "0.1.0"
+description = "A shared library of solutions used across Image Handler microservices."
+authors = ["marcinbogdanowicz <marcin.bogdanowicz@wp.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
