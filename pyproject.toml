@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "image-handler-commons"
+name = "image_handler_commons"
 version = "0.1.0"
 description = "A shared library of solutions used across Image Handler microservices."
 authors = ["marcinbogdanowicz <marcin.bogdanowicz@wp.eu>"]
